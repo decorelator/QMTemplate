@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainBlue">#67afe0</color>
+    <color name="mainRed">#f06767</color>
+
+
+    <color name="colorPrimary">@color/mainBlue</color>
+    <color name="colorPrimaryDark">@android:color/white</color>
+    <color name="colorAccent">@color/mainRed</color>
+    <color name="transparent">#0000</color>
+
+    <color name="halfWhite">#8FFF</color>
+    <color name="tagBack">#61d8b8</color>
+    <color name="inac">#555</color>;
+    <color name="backGray">#ededed</color>
+    <color name="fragBack">#FFF</color>
+    <color name="silver">#ddd</color>
+</resources>

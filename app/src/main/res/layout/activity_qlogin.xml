@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.techtify.qualimoments.activity.QLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/largeMargin"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:hint="@string/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/round_edit"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="@dimen/bigMargin"
+            android:paddingLeft="@dimen/largeMargin"
+            android:paddingRight="@dimen/largeMargin"
+            android:paddingTop="@dimen/bigMargin"
+            android:text=""
+            android:textSize="@dimen/textSmall" />
+
+        <EditText
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/largeMargin"
+            android:background="@drawable/round_edit"
+            android:paddingBottom="@dimen/bigMargin"
+            android:paddingLeft="@dimen/largeMargin"
+            android:paddingRight="@dimen/largeMargin"
+            android:paddingTop="@dimen/bigMargin"
+            android:inputType="textPassword"
+            android:text=""
+            android:textSize="@dimen/textSmall" />
+
+        <EditText
+            android:hint="@string/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/largeMargin"
+            android:background="@drawable/round_edit"
+            android:inputType="textPassword"
+            android:paddingBottom="@dimen/bigMargin"
+            android:paddingLeft="@dimen/largeMargin"
+            android:paddingRight="@dimen/largeMargin"
+            android:paddingTop="@dimen/bigMargin"
+            android:text=""
+
+            android:textSize="@dimen/textSmall" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/largeMargin"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/largeMargin"
+            android:background="@drawable/round_button_red"
+            android:gravity="center"
+            android:onClick="onLogin"
+            android:paddingBottom="@dimen/bigMargin"
+            android:paddingLeft="@dimen/bigMargin"
+            android:paddingRight="@dimen/bigMargin"
+            android:paddingTop="@dimen/bigMargin"
+
+            android:text="@string/login"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/mainBlue" />
+
+        <TextView
+            android:onClick="onFBClick"
+            android:id="@+id/Flogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/largeMargin"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:paddingBottom="@dimen/bigMargin"
+            android:paddingLeft="@dimen/bigMargin"
+            android:paddingRight="@dimen/bigMargin"
+            android:paddingTop="@dimen/bigMargin"
+            android:text="@string/login_with_facebook"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/LiLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/largeMargin"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:onClick="onLoginLi"
+            android:paddingBottom="@dimen/bigMargin"
+            android:paddingLeft="@dimen/bigMargin"
+            android:paddingRight="@dimen/bigMargin"
+            android:paddingTop="@dimen/bigMargin"
+            android:text="@string/LinkedInLogin"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_button"
+            android:padding="@dimen/defaultMargin"
+            android:text="Login"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/halfWhite"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

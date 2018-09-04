@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    tools:context="com.techtify.qualimoments.frag.NetworkFrag">
+
+    <LinearLayout
+        android:background="@color/fragBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/defaultMargin"
+                android:layout_marginRight="@dimen/largeMargin"
+                android:layout_marginLeft="@dimen/largeMargin"
+                android:background="@drawable/round_edit_stroke"
+                android:layout_marginBottom="@dimen/defaultMargin"
+                android:hint="@string/search"
+                android:paddingBottom="@dimen/defaultMargin"
+                android:paddingLeft="@dimen/largeMargin"
+                android:paddingRight="@dimen/largeMargin"
+                android:paddingTop="@dimen/defaultMargin" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/silver" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/silver"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/networkGrid"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:verticalSpacing="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
